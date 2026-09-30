@@ -64,18 +64,14 @@
 
   // Python settings
   "python.languageServer": "Default", // Pylance — the ty extension offers to switch this to "None"
-  "python.defaultInterpreterPath": "/opt/homebrew/bin/python3",
   "python.terminal.activateEnvironment": false, // I activate manually or use `uv run`; Pylance still picks up the project .venv
   "[python]": {
     "editor.defaultFormatter": "charliermarsh.ruff",
     "editor.formatOnSave": true,
     "editor.codeActionsOnSave": {
-      // "source.fixAll": "explicit"
       "source.organizeImports": "explicit",
     },
   },
-  // "python.analysis.inlayHints.variableTypes": true,
-  // "python.analysis.inlayHints.functionReturnTypes": true,
   "python.analysis.typeCheckingMode": "off", // Disable Pylance type checking so ty is the only type checker
   "python.analysis.autoFormatStrings": true,
 
@@ -166,6 +162,9 @@
     "terminal.ansiBrightCyan": "#bddcdc",
     "terminal.ansiBrightWhite": "#f1f1f1",
   },
+
+  // Harper settings
+  "harper.linters.LongSentences": false,
 
   // Miscellaneous settings (Likely added Dynamically)
 }
